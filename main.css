@@ -27,8 +27,6 @@ body{
     padding: 10px;
     transition: flex 0.5s ease-in;
     cursor: pointer;
-    
-
 }
 
 .card-1{
@@ -41,6 +39,7 @@ body{
     background-color: #1D1B1D;
 }
 .card.active{
+    
     flex: 2;
     
 }
@@ -83,8 +82,21 @@ header .logo{
    text-transform: uppercase;
    margin-top: 130px;
    color: #BFCACE;
+   display: flex;
 }
+
+.card.active .card.text{
+    color: #fff;
+}
+
+.text img{
+    width: 150px;
+    height: 150px;
+    margin-left: -20px;
+}
+
 footer{
+    position: relative;
     display: flex;
     width: 100%;
     padding: 10px;
@@ -92,7 +104,7 @@ footer{
     
     justify-content: space-between;
     background-color: transparent;
-    margin-top: 150px;
+    margin-top: 110px;
 }
 
 footer h2{
@@ -112,19 +124,33 @@ footer h2{
 footer img{
     width: 50px;
     height: 50px;
+    position: absolute;
+    bottom: -120px;
+    
+   
 }
 
 .inactive footer .third{
     display: none;
 
 }
-.card.active .text {
+.inactive .text img{
+    display: none;
    
-   
-    
+}
+.card.active footer {
+font-size: 38px;  
+}
+
+.card.active .text img{
+    width: 350px;
+    height: 350px;
+    margin-left: 50px;
+    margin-top: -100px;
 }
 
 @media(max-width:850px){
+    
     footer .third{
         display: none;
     }
