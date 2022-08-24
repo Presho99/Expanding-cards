@@ -14,16 +14,104 @@ body{
 
 .container{
     display: flex;
-    width: 90vw;
+    width: 100%;
+    
 }
 .card{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
     flex: 0.5;
+    color: beige;
+    padding: 10px;
+    transition: flex 0.5s ease-in;
+    cursor: pointer;
+    
+
 }
 
 .card-1{
-    flex: 1;
+    background-color: #5A66F0;
+}
+.card-2{
+    background-color: #E95A67;
+}
+.card-3{
+    background-color: #1D1B1D;
+}
+.card.active{
+    flex: 3;
+    
+}
+
+/* .card-opaque{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    
+    opacity: 0.7;
+} */
+
+/* .card.active .card-opaque{
+    opacity: 0;
+} */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0px 10px;
+    background: transparent;
+    align-items: center;
+    
+}
+
+header i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+header .logo{
+    font-size: 40px;
+}
+
+
+
+.card .text{
+   font-size: 40px; 
+   line-height: 80px;
+   text-transform: uppercase;
+}
+footer{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    /* background-color: beige; */
+    
+    justify-content: space-between;
+    background-color: transparent;
+    margin-top: 200px;
+}
+
+footer h2{
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.first, .second, .third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}
+
+.card.active footer {
+   
+    
 }
