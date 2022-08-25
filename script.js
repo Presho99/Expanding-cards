@@ -1,7 +1,10 @@
 const cards = document.querySelectorAll(".card")
+console.log(cards)
 
 cards.forEach((card) => {
+    console.log(card.id)
     card.addEventListener("click", () => {
+      
         removeActive()
         card.classList.remove("inactive")
         card.classList.add("active")
