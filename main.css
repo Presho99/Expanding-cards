@@ -31,6 +31,11 @@ body {
     
 }
 
+.card.active {
+    flex: 1;
+    color: #fff;
+}
+
 .card-1 {
     background-color: #5A66F0;
 }
@@ -43,11 +48,7 @@ body {
     background-color: #1D1B1D;
 }
 
-.card.active {
 
-    flex: 1;
-    color: #fff;
-}
 header {
     display: flex;
     justify-content: space-between;
@@ -76,24 +77,47 @@ header .logo {
     transition: 0.5s ease-in;
 }
 
+.card.active .text {
+    color: #fff;
+    margin-left: 30px;
+    font-size: 50px;
+    text-transform: capitalize;
+    line-height: 100px;
 
-.text .image {
-    
-    margin-left: -40px;
-    transition: 0.5s ease-in; 
-    margin-top: -30px;
-  
 }
 
 .text h2{
     z-index: 1;
 }
 
+.card.active .text h2 {
+    margin-top: 30px;
+
+}
+
+.text .image {
+    margin-left: -40px;
+    transition: 0.5s ease-in; 
+    margin-top: -30px;
+}
+
 .image img{
     height: 250px;
-    width: 250px;
-    
+    width: 250px;   
 }
+
+.card.active .text img {
+    width: 400px;
+    height: 400px;
+    margin-left: 40px;
+    margin-top: -100px;
+}
+
+.inactive .text img {
+    display: none;
+
+}
+
 
 footer {
     position: relative;
@@ -124,51 +148,46 @@ footer h2 {
 }
 
 footer img {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     position: absolute;
-    bottom: -120px;
-
-
+    bottom: -180px; 
+    transition: 1s ease-in;
+    left: 20px;
+    
 }
 
+footer .second img{
+    left: 220px;
+}
 
+footer .third img{
+    left: 460px;
+}
 
 .inactive footer .third {
     display: none;
-
-}
-
-.inactive .text img {
-    display: none;
-
-}
-
-.card.active .text {
-    color: #fff;
-    margin-left: 30px;
-    font-size: 50px;
-    text-transform: capitalize;
-    line-height: 100px;
-
-}
-
-.card.active .text h2 {
-    margin-top: 30px;
-
 }
 
 .card.active footer {
-    font-size: 38px;
     margin-top: 58px;
 }
 
-.card.active .text img {
-    width: 400px;
-    height: 400px;
-    margin-left: 40px;
-    margin-top: -100px;
+.card.active footer .first:hover img{
+    bottom: 30px;
+    left: 20px;
 }
+
+.card.active footer .second:hover img{
+    bottom: 30px;
+    left: 220px;
+}
+
+.card.active footer .third:hover img{
+    bottom: 30px;
+    left: 460px;
+}
+
 
 @media(max-width:850px) {
 
@@ -185,3 +204,4 @@ footer img {
     }
 
 }
+
