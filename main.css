@@ -153,12 +153,12 @@ footer img {
     position: absolute;
     bottom: -180px; 
     transition: 1s ease-in;
-    left: 20px;
+    left: 10px;
     
 }
 
 footer .second img{
-    left: 220px;
+    left: 250px;
 }
 
 footer .third img{
@@ -175,12 +175,12 @@ footer .third img{
 
 .card.active footer .first:hover img{
     bottom: 30px;
-    left: 20px;
+    left: 10px;
 }
 
 .card.active footer .second:hover img{
     bottom: 30px;
-    left: 220px;
+    left: 250px;
 }
 
 .card.active footer .third:hover img{
