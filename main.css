@@ -70,7 +70,7 @@ header .logo {
 .card .text {
     font-size: 40px;
     line-height: 80px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-top: 130px;
     color: #BFCACE;
     display: flex;
@@ -96,14 +96,14 @@ header .logo {
 }
 
 .text .image {
-    margin-left: -40px;
+    margin-left: -60px;
     transition: 0.5s ease-in; 
     margin-top: -30px;
 }
 
 .image img{
-    height: 250px;
-    width: 250px;   
+    height: 300px;
+    width: 300px;   
 }
 
 .card.active .text img {
@@ -126,7 +126,7 @@ footer {
     padding: 10px;
     justify-content: space-between;
     background-color: transparent;
-    margin-top: 100px;
+    margin-top: 80px;
     transition: 0.5s ease-in;
 }
 
@@ -162,7 +162,7 @@ footer .second img{
 }
 
 footer .third img{
-    left: 460px;
+    left: 490px;
 }
 
 .inactive footer .third {
@@ -174,18 +174,22 @@ footer .third img{
 }
 
 .card.active footer .first:hover img{
-    bottom: 30px;
+    bottom: 20px;
     left: 10px;
 }
 
 .card.active footer .second:hover img{
-    bottom: 30px;
+    bottom: 20px;
     left: 250px;
 }
 
 .card.active footer .third:hover img{
-    bottom: 30px;
-    left: 460px;
+    bottom: 20px;
+    left: 490px;
+}
+
+.inactive footer{
+    margin-top: 100px;
 }
 
 
